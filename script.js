@@ -1,5 +1,5 @@
-let a=0,
-  initialState = true,
+let storedVal = 0,
+  firstInput = true,
   operand = null;
 
 document.getElementById('result').value = '0';
@@ -76,3 +76,4 @@ function clearToInitialState() {
   initialState = true;
   operand = null;
 }
+
