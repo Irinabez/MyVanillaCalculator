@@ -1,9 +1,16 @@
-let storedVal = 0,
-  firstInput = true,
+let a=0,
+  initialState = true,
   operand = null;
 
-document.getElementById('result').value = '0';
 
+function read() {
+  return document.getElementById('result').value || '0';
+}
+
+function write(value) {
+  document.getElementById('result').value = value;
+}
+//testing git
 function toInput(id) {
   console.log(operand);
   console.log(initialState);
@@ -76,4 +83,3 @@ function clearToInitialState() {
   initialState = true;
   operand = null;
 }
-
